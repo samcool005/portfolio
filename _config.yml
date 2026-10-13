@@ -8,13 +8,13 @@
 
 title: Rahul Singla
 description: Personal portfolio for analytics, machine learning, and AI projects
-github_username: rahuls0959
+github_username: samcool005
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "portfolio"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://rahuls0959.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://samcool005.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -45,7 +45,7 @@ minima:
       url: "https://www.linkedin.com/in/rahul-singla1/"
     - title: GitHub repositories
       icon: github
-      url: "https://github.com/rahuls0959?tab=repositories"
+      url: "https://github.com/samcool005?tab=repositories"
 
 # Set this to true to get LaTeX math equation support
 use_math: 
