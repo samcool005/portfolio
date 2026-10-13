@@ -1,8 +1,129 @@
 ---
-layout: home
+layout: default
+title: Rahul Singla | Portfolio
 search_exclude: true
+about_bio: |
+  Senior Product Manager with **10+ years of experience** building and scaling consumer products across **mobility, travel, gaming and fintech**. Owned product strategy and execution across **marketplaces, payments, growth and platforms**, with a track record of delivering measurable impact at scale.
+profile_image: "/assets/images/rahul-singla.jpg"
 ---
 
-<h2>Hi There! I am Rahul. I have completed my engineering from IIT Kanpur in 2015 and MBA from ISB in 2020. I am starting this website to share the personal projects in Analytics, Machine Learning and AI-native Product Management</h2>
-  
-# Posts
+<div class="portfolio-page">
+  <section class="portfolio-section" id="about-me" aria-labelledby="about-me-heading">
+    <h2 id="about-me-heading">About Me</h2>
+    <div class="portfolio-about">
+      <div class="about-bio">
+        {{ page.about_bio | markdownify }}
+      </div>
+      {% if page.profile_image != "" %}
+        <img class="profile-photo" src="{{ page.profile_image | relative_url }}" alt="Rahul Singla">
+      {% else %}
+        <div class="profile-photo-placeholder" role="img" aria-label="Profile photo placeholder">Add a photo and set the profile_image path in this page's front matter</div>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="experience" aria-labelledby="experience-heading">
+    <h2 id="experience-heading">Experience</h2>
+    {% if site.data.experience.size > 0 %}
+      <div class="experience-grid">
+        {% for experience in site.data.experience %}
+          <article class="experience-card">
+            <div class="experience-company">
+              {% if experience.logo and experience.logo != "" %}
+                <img class="experience-logo" src="{{ experience.logo | relative_url }}" alt="{{ experience.company | escape }} logo">
+              {% else %}
+                <p class="experience-company-fallback">{{ experience.company | escape }}</p>
+              {% endif %}
+            </div>
+            <div class="experience-role-meta">
+              {% if experience.title and experience.title != "" %}
+                <p class="experience-title">{{ experience.title | escape }}</p>
+              {% endif %}
+              <p class="experience-duration">{{ experience.duration | escape }}</p>
+            </div>
+            <hr class="experience-divider">
+            <p class="experience-description">{{ experience.description | escape }}</p>
+            <hr class="experience-divider">
+            {% if experience.skills and experience.skills.size > 0 %}
+              <ul class="experience-skills" aria-label="Key skills">
+                {% for skill in experience.skills %}
+                  <li>{{ skill | escape }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="experience-empty">Add roles to <code>_data/experience.yml</code> to display them here.</p>
+    {% endif %}
+  </section>
+
+  <section class="portfolio-section" id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+    {% for project_section in site.data.projects.sections %}
+      <div class="project-category">
+        <h3>{{ project_section.title | escape }}</h3>
+        <div class="project-grid">
+          {% for project in project_section.projects %}
+            {% assign project_post = nil %}
+            {% assign project_href = project.url %}
+            {% if project.post_file %}
+              {% assign project_post = site.posts | where: "path", project.post_file | first %}
+              {% if project_post %}
+                {% assign project_href = project_post.url %}
+              {% endif %}
+            {% endif %}
+            {% if project_href %}
+              <a class="project-card-link" href="{% if project_href contains '://' %}{{ project_href }}{% else %}{{ project_href | relative_url }}{% endif %}" aria-label="Open project: {{ project.title | escape }}" {% if project_href contains '://' or project.open_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {% endif %}
+            <article class="project-card">
+              {% if project.image %}
+                <img class="project-card-image{% if project.image_fit == 'contain' %} project-card-image-contain{% endif %}" src="{{ project.image | relative_url }}" alt="{% if project.image_alt %}{{ project.image_alt | escape }}{% else %}Illustration for {{ project.title | escape }}{% endif %}" loading="lazy" decoding="async">
+              {% endif %}
+              <div class="project-card-content">
+                <h4 class="project-title">{{ project.title | escape }}</h4>
+                <hr class="project-divider">
+                <p class="project-description">{{ project.description | escape }}</p>
+                <hr class="project-divider">
+                {% if project.tags and project.tags.size > 0 %}
+                  <ul class="project-tags" aria-label="Project tags">
+                    {% for tag in project.tags %}
+                      <li>{{ tag | escape }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </article>
+            {% if project_href %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="portfolio-section" id="contact-me" aria-labelledby="contact-me-heading">
+    <h2 id="contact-me-heading">Get in touch</h2>
+    {% assign linkedin = site.minima.social_links | where: "title", "LinkedIn" | first %}
+    <div class="contact-grid">
+      <article class="contact-card">
+        <h3>Email</h3>
+        <p>mailtorahulsingla@gmail.com</p>
+      </article>
+      <article class="contact-card">
+        <h3>Mobile</h3>
+        <p>+91-9056376496</p>
+      </article>
+      <article class="contact-card">
+        <h3>LinkedIn</h3>
+        {% if linkedin %}
+          <p><a href="{{ linkedin.url }}" target="_blank" rel="noopener noreferrer">{{ linkedin.url | escape }}</a></p>
+        {% else %}
+          <p>Add LinkedIn profile URL</p>
+        {% endif %}
+      </article>
+    </div>
+  </section>
+</div>

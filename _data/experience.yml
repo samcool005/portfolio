@@ -1,0 +1,38 @@
+# Add one item per role. Store company logos in assets/images/ and use site paths.
+# Replace these examples with your own roles. Add logo files under assets/images/
+# and set each logo to its site path, or leave it empty to show company initials.
+- company: "Gameskraft"
+  logo: "/assets/images/gameskraft-logo.png"
+  title: "Senior Product Manager"
+  duration: "Jul 2020 - Nov 2025"
+  description: "Owned payments across pay-ins, payouts and refunds, handling ₹1,500 Cr in monthly TPV. Improved payment success, scaled platform capabilities, and drove acquisition and conversion growth."
+  skills:
+    - Payments
+    - Platform Strategy
+    - Growth & Acquisition
+    - Product Analytics
+    - SEO & Conversion
+
+- company: "Paytm Travel"
+  logo: "/assets/images/paytm-logo.png"
+  title: "Executive Manager"
+  duration: "Sep 2018 - Apr 2019"
+  description: "Scaled Paytm Flights to 600K monthly bookings and ₹300 Cr GMV while achieving profitability. Improved booking conversion by 20% through funnel optimisation and experimentation."
+  skills:
+    - Travel Marketplace
+    - Growth Strategy
+    - Funnel Optimisation
+    - A/B Experimentation
+    - Retention & Loyalty
+
+- company: "Ola Auto"
+  logo: "/assets/images/ola-logo.png"
+  title: "Program Manager"
+  duration: "Jul 2015 - Aug 2018"
+  description: "Scaled Ola Auto to 1M+ weekly bookings across 71 cities, driving marketplace growth through city expansion, supply strategy, and driver-focused product initiatives."
+  skills:
+    - Marketplace Growth
+    - Supply Strategy
+    - City Expansion
+    - Unit Economics
+    - Driver Experience

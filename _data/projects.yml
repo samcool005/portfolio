@@ -1,0 +1,105 @@
+# Add or edit projects here. Use post_file for a Jekyll post or url for a file/external link.
+# Each project can include title, description, tags, and either post_file or url.
+sections:
+  - title: "AI-native Product Development"
+    projects:
+      - title: "AI-Powered Support Ticket Classifier"
+        description: "An AI/NLP solution that classifies customer support tickets by issue type, priority, sentiment, and assigned team to improve triage and help support teams resolve issues faster."
+        image: "/assets/images/projects/ai-ticket-classification-workflow.png"
+        image_alt: "AI ticket classification workflow showing message intake, ticket classification, and support routing"
+        image_fit: "contain"
+        url: "https://future-jam-0d4.notion.site/AI-powered-Ticket-Classifier-3f714113ee6580e9afa5c29098d6a616?source=copy_link"
+        tags:
+          - AI/ML
+          - NLP
+          - LLM Applications
+          - Product Development
+
+  - title: "ML Projects"
+    projects:
+      - title: "Recommendation Systems - Demographic Filtering (Part 1)"
+        description: "A beginner-friendly implementation of demographic filtering as the first part of a Python recommendation systems series."
+        image: "/assets/images/projects/recommendation-demographic.svg"
+        post_file: "_posts/2026-10-10-_Recommendation-System_Part-1.md"
+        tags:
+          - Python
+          - Recommendation Systems
+          - Demographic Filtering
+      - title: "Recommendation Systems - Content Based Filtering (Part 2)"
+        description: "Explores content-based filtering as the second part of a beginner's recommendation systems series in Python."
+        image: "/assets/images/projects/recommendation-content-based.svg"
+        post_file: "_posts/2026-10-10-_Recommendation-System_Part-2.md"
+        tags:
+          - Python
+          - Recommendation Systems
+          - Content-Based Filtering
+      - title: "Recommendation Systems - KNN Item-Based Collaborating Filtering (Part 3)"
+        description: "Implements item-based collaborative filtering with KNN as the third part of a recommendation systems series."
+        image: "/assets/images/projects/recommendation-knn.svg"
+        post_file: "_posts/2026-10-10-_Recommendation-System_Part-3.md"
+        tags:
+          - Python
+          - Recommendation Systems
+          - KNN
+      - title: "Customer Churn Analysis - Exploratory Data Analysis"
+        description: "Explores customer churn patterns and behaviors to help identify actions that may improve retention."
+        image: "/assets/images/projects/churn-exploration.svg"
+        post_file: "_posts/2026-10-10-_Customer-Churn-Analysis_Exploratory-Data-Analysis.md"
+        tags:
+          - Python
+          - Churn
+          - Exploratory Data Analysis
+      - title: "Customer Churn Analysis - Predictive Modeling (Logistic Regression and Decision Tree)"
+        description: "Builds logistic regression and decision tree models to estimate customer churn probability from historical data."
+        image: "/assets/images/projects/churn-prediction.svg"
+        post_file: "_posts/2026-10-10-_Customer-Churn-Analysis_Predictive-Modeling.md"
+        tags:
+          - Python
+          - Churn
+          - Logistic Regression
+          - Decision Tree
+      - title: "Basic Text Analytics Tutorial on Sentiment Analysis of Tweets using Python"
+        description: "Analyses tweet sentiment and builds a Naive Bayes classifier to label tweets as positive, negative, or neutral."
+        image: "/assets/images/projects/sentiment-analysis.svg"
+        post_file: "_posts/2020-04-18-twitter_sentiment_analysis.md"
+        tags:
+          - Python
+          - NLP
+          - Sentiment Analysis
+          - Naive Bayes
+      - title: "Topic Modeling of Product Reviews on Amazon Scraped using Selenium in Python"
+        description: "Scrapes Amazon product reviews and applies topic modeling to discover themes in the review text."
+        image: "/assets/images/projects/topic-modeling.svg"
+        post_file: "_posts/2020-04-21-Topic_Modeling_Amazon_Reviews_new.md"
+        tags:
+          - Python
+          - NLP
+          - Topic Modeling
+          - Selenium
+
+  - title: "Case Studies"
+    projects:
+      - title: "Music Streaming Platform Engagement"
+        description: "How can MyMelody increase user engagement and retention in its music streaming experience?"
+        image: "/assets/images/projects/music-streaming-banner.jpg"
+        image_alt: "Collage of music streaming app icons"
+        url: "/assets/case-studies/music-streaming-app-user-engagement.pdf#toolbar=0"
+        open_new_tab: true
+        tags:
+          - Music Streaming
+          - Engagement
+          - Retention
+          - Monetization
+          - Growth Strategy
+      - title: "mFine HealthTech Growth Strategy"
+        description: "How can mFine overcome low awareness and trust barriers to grow adoption of digital healthcare?"
+        image: "/assets/images/projects/mfine-growth-banner.png"
+        image_alt: "mFine digital healthcare logo on a turquoise background"
+        url: "/assets/case-studies/mfine-healthtech-growth-strategy.pdf#toolbar=0"
+        open_new_tab: true
+        tags:
+          - Digital Health
+          - Growth Strategy
+          - User Acquisition
+          - Brand Awareness
+          - User Trust
