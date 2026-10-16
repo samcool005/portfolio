@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6E7FC"/>
+      <stop offset="1" stop-color="#C6E6F3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h720v260H0z"/>
+
+  <circle cx="96" cy="46" r="5" fill="#fff" fill-opacity=".65"/>
+  <circle cx="625" cy="214" r="7" fill="#fff" fill-opacity=".55"/>
+  <circle cx="594" cy="45" r="4" fill="#fff" fill-opacity=".7"/>
+  <circle cx="145" cy="217" r="6" fill="#fff" fill-opacity=".55"/>
+
+  <path d="M218 129h88m106 0h87" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <path d="m297 120 11 9-11 9m106-18 11 9-11 9" stroke="#6476C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="109" y="77" width="91" height="108" rx="12" fill="#fff" fill-opacity=".55" transform="rotate(-8 109 77)"/>
+  <rect x="121" y="74" width="91" height="108" rx="12" fill="#fff" fill-opacity=".82"/>
+  <path d="M143 101h47m-47 14h47m-47 14h34" stroke="#737CC9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M143 147h39" stroke="#92BFCB" stroke-width="6" stroke-linecap="round"/>
+
+  <circle cx="360" cy="129" r="58" fill="#fff" fill-opacity=".4"/>
+  <circle cx="360" cy="129" r="43" fill="#fff" fill-opacity=".72"/>
+  <path d="M343 125c0-12 9-21 21-21 11 0 20 9 20 20 0 7-3 13-8 17l13 13" stroke="#636FC7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="350" cy="121" r="4" fill="#F0B65D"/>
+  <circle cx="363" cy="115" r="4" fill="#58AA9F"/>
+  <circle cx="375" cy="125" r="4" fill="#E9968E"/>
+  <circle cx="359" cy="135" r="4" fill="#58AA9F"/>
+  <path d="m350 121 13-6 12 10-16 10-9-14Z" stroke="#9AA4D9" stroke-width="2"/>
+
+  <path d="M513 88h84a13 13 0 0 1 13 13v51a13 13 0 0 1-13 13h-32l-19 16v-16h-33a13 13 0 0 1-13-13v-51a13 13 0 0 1 13-13Z" fill="#fff" fill-opacity=".9"/>
+  <path d="M526 109h51m-51 14h58m-58 14h35" stroke="#707BC6" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="595" cy="103" r="10" fill="#67B5A6"/>
+  <path d="m590 103 4 4 7-8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="95" cy="129" r="8" fill="#F0B65D"/>
+  <circle cx="625" cy="129" r="8" fill="#F0B65D"/>
+</svg>

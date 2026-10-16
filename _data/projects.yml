@@ -14,6 +14,16 @@ sections:
           - NLP
           - LLM Applications
           - Product Development
+      - title: "RAG: Architecture, Retrieval and Evaluation"
+        description: "Explains how retrieval-augmented generation grounds LLM answers in trusted documents, covering chunking, embeddings, vector and hybrid search, prompt citations, and RAGAS evaluation."
+        image: "/assets/images/projects/rag-architecture.svg"
+        image_alt: "Illustration of source documents flowing through retrieval to a grounded answer"
+        url: "https://future-jam-0d4.notion.site/RAG-Architecture-Retrieval-and-Evaluation-3fb14113ee65805284e1dc039458b746"
+        tags:
+          - RAG
+          - LLM Applications
+          - Information Retrieval
+          - AI Product Development
 
   - title: "ML Projects"
     projects:
