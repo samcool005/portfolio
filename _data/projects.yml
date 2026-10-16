@@ -21,9 +21,9 @@ sections:
         url: "https://future-jam-0d4.notion.site/RAG-Architecture-Retrieval-and-Evaluation-3fb14113ee65805284e1dc039458b746"
         tags:
           - RAG
-          - LLM Applications
-          - Information Retrieval
-          - AI Product Development
+          - Hybrid Search
+          - Vector Databases
+          - RAG Evaluation
 
   - title: "ML Projects"
     projects:
